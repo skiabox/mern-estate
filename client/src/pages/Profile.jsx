@@ -48,6 +48,7 @@ const Profile = () => {
         setFilePerc(Math.round(progress));
       },
       error => {
+        console.log(error);
         setFileUploadError(true);
       },
       () => {
